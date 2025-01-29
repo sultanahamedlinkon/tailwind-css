@@ -3,14 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind css</title>
     <link href="./output.css" rel="stylesheet" />
+
+    <!-- tailwind cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline text-red-600">Hello world!</h1>
-    <p class="text-2xl">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, totam!j
-    </p>
-    <p class="text-orange-400 font-bold text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur ratione rem rerum quibusdam, maiores, corporis consequatur cupiditate incidunt quae ipsum maxime dolorum quia, reiciendis repellat accusamus adipisci doloremque explicabo.</p>
+    <!-- main content -->
+     <main class="max-w-screen-xl max-auto px-16 lg:px-28">
+
+      <!-- header section -->
+       <header class="flex pt-10 mb-20">
+
+        <!-- text content -->
+         <div>
+          <h1 class="text-5xl md:text-7xl">It's good <br>
+            tea time at The <br> Tea House</h1>
+            <br>
+            <p class="text-gray-500 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <br>
+            <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold">Explore More  <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
+         </div>
+
+         <!-- img content -->
+          <div class="relative">
+            <!-- image -->
+             <div>
+              <img class="w-full" src="./images/banner.png" alt="">
+             </div>
+             <!-- card -->
+              <div class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-20 md:top-80 md:left-32 lg:left-20">
+                <!-- icon -->
+                 <div><i class="fa-solid fa-star text-2xl text-amber-400"></i></div>
+                 <!-- text -->
+                  <div class="ml-2">
+                    <h2 class="lg:text-2xl font-bold">5.00</h2>
+                    <p class="text-gray-500">Trust Pilot Ratings</p>
+                  </div>
+              </div>
+          </div>
+
+
+       </header>
+     </main>
   </body>
 </html>
